@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-000 Site &amp; Massing | Maya Lin Architecture Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="drafting-topbar">
+        <div class="topbar-left">
+            <a href="index.html" class="studio-stamp">
+                <span class="stamp-box">ML</span>
+                <div class="stamp-info">
+                    <span class="stamp-name">MAYA LIN &mdash; ARCHITECTURE DOSSIER</span>
+                    <span class="stamp-meta">PROSPECTIVE B.ARCH &bull; RESIDENTIAL &amp; TECTONIC STUDIES</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="topbar-sheet-id">
+            <span class="sheet-code">SHEET A-000</span>
+            <span class="sheet-divider">/</span>
+            <span class="sheet-name">SITE & MASSING STUDY</span>
+        </div>
+
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Sheet Index">
+            <span></span><span></span><span></span>
+        </button>
+
+        <nav class="sheet-nav" id="nav-menu">
+            <a href="index.html" class="sheet-tab active">
+                <span class="tab-no">A-000</span>
+                <span class="tab-lbl">Site &amp; Massing</span>
+            </a>
+            <a href="projects.html" class="sheet-tab ">
+                <span class="tab-no">A-101</span>
+                <span class="tab-lbl">Built &amp; Unbuilt</span>
+            </a>
+            <a href="achievements.html" class="sheet-tab ">
+                <span class="tab-no">A-201</span>
+                <span class="tab-lbl">Juries &amp; Honors</span>
+            </a>
+            <a href="about.html" class="sheet-tab ">
+                <span class="tab-no">A-301</span>
+                <span class="tab-lbl">Manifesto &amp; Craft</span>
+            </a>
+            <a href="contact.html" class="sheet-tab ">
+                <span class="tab-no">A-401</span>
+                <span class="tab-lbl">Studio Desk</span>
+            </a>
+        </nav>
+    </header>
+
+    <main class="drafting-sheet">
+        <!-- Asymmetric Architectural Drawing Board -->
+        <section class="board-hero">
+            <div class="container board-hero-grid">
+                <!-- Left Column: Title Block & Statement -->
+                <div class="board-statement">
+                    <div class="north-arrow-row">
+                        <div class="north-compass" aria-hidden="true">
+                            <span class="n-letter">N</span>
+                            <div class="n-needle"></div>
+                        </div>
+                        <span class="coord-stamp">42°21'N 71°03'W &bull; B.ARCH APPLICANT DOSSIER</span>
+                    </div>
+
+                    <h1>Designing Domestic <span class="crimson-italic">Sanctuaries</span> Framed by Light &amp; Timber.</h1>
+
+                    <p class="board-lead">
+                        I am <strong>Maya Lin</strong>, a prospective Bachelor of Architecture student dedicated to human-scale residential design. Move your cursor across the <strong>Axonometric House Study</strong> to orbit the massing and inspect how roof, loft, glulam frame, hearth, and plinth interlock.
+                    </p>
+
+                    <div class="board-cta-row">
+                        <a href="projects.html" class="btn btn-crimson">Open Sheet A-101: Built &amp; Unbuilt &rarr;</a>
+                        <a href="about.html" class="btn btn-outline">Read Sheet A-301: Manifesto</a>
+                    </div>
+
+                    <!-- Architectural Schedule Table -->
+                    <div class="schedule-box">
+                        <div class="schedule-head">DOSSIER DRAWING SCHEDULE</div>
+                        <a href="projects.html" class="schedule-row">
+                            <span class="sch-no">A-101</span>
+                            <span class="sch-title">Built &amp; Unbuilt Works</span>
+                            <span class="sch-desc">06 Residential &amp; Scale Model Studies &rarr;</span>
+                        </a>
+                        <a href="achievements.html" class="schedule-row">
+                            <span class="sch-no">A-201</span>
+                            <span class="sch-title">Juries &amp; Honors</span>
+                            <span class="sch-desc">Charrette 1st Place &amp; National Silver Medal &rarr;</span>
+                        </a>
+                        <a href="about.html" class="schedule-row">
+                            <span class="sch-no">A-301</span>
+                            <span class="sch-title">Manifesto &amp; Craft</span>
+                            <span class="sch-desc">Design Philosophy, Analog &amp; CAD Workflow &rarr;</span>
+                        </a>
+                        <a href="contact.html" class="schedule-row">
+                            <span class="sch-no">A-401</span>
+                            <span class="sch-title">Studio Desk</span>
+                            <span class="sch-desc">Portfolio Critique &amp; Admissions Contact &rarr;</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Column: Interactive 3D Exploded House Viewport -->
+                <div class="axon-board" id="model-stage-card">
+                    <div class="axon-header">
+                        <div>
+                            <span class="axon-fig">FIG. A-000.1 // EXPLODED AXONOMETRIC</span>
+                            <h2>Five-Layer Residential Tectonic Study</h2>
+                        </div>
+                        <span class="axon-readout" id="gyro-coords">AZIMUTH 28° / ELEV -20°</span>
+                    </div>
+
+                    <div class="viewport-3d" id="viewport-3d">
+                        <!-- Dimension lines overlay -->
+                        <div class="dim-line-v"><span>+11.4m RIDGE</span></div>
+                        <div class="dim-line-h"><span>SPAN 14.4m (4 BAYS @ 3.6m)</span></div>
+
+                        <div class="house-assembly" id="house-assembly">
+                            <!-- Layer 1: Pitched Roof -->
+                            <div class="house-part part-roof" data-layer="1">
+                                <div class="roof-plane left-slope">
+                                    <span class="part-tag">01 // STANDING-SEAM ROOF</span>
+                                </div>
+                                <div class="roof-plane right-slope"></div>
+                                <div class="roof-chimney"></div>
+                            </div>
+
+                            <!-- Layer 2: Upper Loft -->
+                            <div class="house-part part-upper" data-layer="2">
+                                <div class="box-face front">
+                                    <span class="part-tag">02 // CEDAR LOUVER LOFT</span>
+                                    <div class="window-row">
+                                        <span></span><span></span><span></span><span></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Layer 3: Glulam Frame -->
+                            <div class="house-part part-frame" data-layer="3">
+                                <span class="part-tag">03 // GLULAM POST &amp; BEAM</span>
+                                <div class="beam-grid">
+                                    <div class="pillar p1"></div>
+                                    <div class="pillar p2"></div>
+                                    <div class="pillar p3"></div>
+                                    <div class="pillar p4"></div>
+                                    <div class="cross-beam b1"></div>
+                                    <div class="cross-beam b2"></div>
+                                </div>
+                            </div>
+
+                            <!-- Layer 4: Ground Living Pavilion -->
+                            <div class="house-part part-ground" data-layer="4">
+                                <div class="ground-slab">
+                                    <span class="part-tag">04 // HEARTH &amp; COURTYARD PLAN</span>
+                                    <div class="interior-walls">
+                                        <div class="wall-seg w1"></div>
+                                        <div class="wall-seg w2"></div>
+                                        <div class="hearth-core"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Layer 5: Concrete Plinth -->
+                            <div class="house-part part-plinth" data-layer="5">
+                                <div class="plinth-base">
+                                    <span class="part-tag">05 // BOARD-FORMED PLINTH</span>
+                                    <div class="terrace-steps">
+                                        <span></span><span></span><span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="axon-footer">
+                        <span class="axon-note">Move cursor to orbit &amp; separate structural assemblies</span>
+                        <div class="axon-toggles">
+                            <button type="button" class="mini-btn active" id="btn-explode">Exploded Assembly</button>
+                            <button type="button" class="mini-btn" id="btn-assemble">Assembled Mass</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Material & Spatial Principles Strip -->
+        <section class="principles-strip">
+            <div class="container principles-grid">
+                <div class="principle-cell">
+                    <span class="p-code">SEC. 01 // DAYLIGHT</span>
+                    <h3>Passive Solar Sections</h3>
+                    <p>Calibrating roof overhangs and south-facing courtyards so winter sunlight warms thermal floors while summer glare is shaded.</p>
+                </div>
+                <div class="principle-cell">
+                    <span class="p-code">SEC. 02 // TECTONICS</span>
+                    <h3>Honest Joinery &amp; Craft</h3>
+                    <p>Testing every residential concept in 1:50 and 1:25 basswood scale models where structural loads and timber connections remain legible.</p>
+                </div>
+                <div class="principle-cell">
+                    <span class="p-code">SEC. 03 // THRESHOLD</span>
+                    <h3>Porch, Garden &amp; Hearth</h3>
+                    <p>Designing gentle transitions from neighborhood street to private domestic rooms through verandas, lightwells, and garden courts.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="titleblock-footer">
+        <div class="container titleblock-grid">
+            <div class="tb-cell tb-main">
+                <span class="tb-kicker">ARCHITECTURAL ADMISSIONS PORTFOLIO // 2026 EDITION</span>
+                <p class="tb-title">MAYA LIN &mdash; RESIDENTIAL ARCHITECTURE &amp; SPATIAL STUDIES</p>
+            </div>
+            <div class="tb-cell">
+                <span class="tb-kicker">SCALE</span>
+                <p class="tb-val">1:50 AXONOMETRIC</p>
+            </div>
+            <div class="tb-cell">
+                <span class="tb-kicker">DRAWING NO.</span>
+                <p class="tb-val">A-000</p>
+            </div>
+            <div class="tb-cell tb-links">
+                <span class="tb-kicker">SHEET INDEX</span>
+                <div class="tb-nav-links">
+                    <a href="index.html">A-000</a>
+                    <a href="projects.html">A-101</a>
+                    <a href="achievements.html">A-201</a>
+                    <a href="about.html">A-301</a>
+                    <a href="contact.html">A-401</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

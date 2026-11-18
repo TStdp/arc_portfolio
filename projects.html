@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-101 Built &amp; Unbuilt | Maya Lin Architecture Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="drafting-topbar">
+        <div class="topbar-left">
+            <a href="index.html" class="studio-stamp">
+                <span class="stamp-box">ML</span>
+                <div class="stamp-info">
+                    <span class="stamp-name">MAYA LIN &mdash; ARCHITECTURE DOSSIER</span>
+                    <span class="stamp-meta">PROSPECTIVE B.ARCH &bull; RESIDENTIAL &amp; TECTONIC STUDIES</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="topbar-sheet-id">
+            <span class="sheet-code">SHEET A-101</span>
+            <span class="sheet-divider">/</span>
+            <span class="sheet-name">BUILT & UNBUILT WORKS</span>
+        </div>
+
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Sheet Index">
+            <span></span><span></span><span></span>
+        </button>
+
+        <nav class="sheet-nav" id="nav-menu">
+            <a href="index.html" class="sheet-tab ">
+                <span class="tab-no">A-000</span>
+                <span class="tab-lbl">Site &amp; Massing</span>
+            </a>
+            <a href="projects.html" class="sheet-tab active">
+                <span class="tab-no">A-101</span>
+                <span class="tab-lbl">Built &amp; Unbuilt</span>
+            </a>
+            <a href="achievements.html" class="sheet-tab ">
+                <span class="tab-no">A-201</span>
+                <span class="tab-lbl">Juries &amp; Honors</span>
+            </a>
+            <a href="about.html" class="sheet-tab ">
+                <span class="tab-no">A-301</span>
+                <span class="tab-lbl">Manifesto &amp; Craft</span>
+            </a>
+            <a href="contact.html" class="sheet-tab ">
+                <span class="tab-no">A-401</span>
+                <span class="tab-lbl">Studio Desk</span>
+            </a>
+        </nav>
+    </header>
+
+    <main class="drafting-sheet">
+        <section class="sheet-banner">
+            <div class="container sheet-banner-flex">
+                <div>
+                    <span class="sheet-kicker">DRAWING SET A-101 // SELECTED RESIDENTIAL &amp; TECTONIC STUDIES</span>
+                    <h1>Built &amp; Unbuilt Works</h1>
+                    <p>Six architectural investigations spanning multi-generational homes, timber joinery models, urban infill rowhouses, and daylighting studies.</p>
+                </div>
+                <div class="filter-row">
+                    <button class="filter-pill active" data-filter="all">All Plates (06)</button>
+                    <button class="filter-pill" data-filter="residential">Residential Plans</button>
+                    <button class="filter-pill" data-filter="model">Scale Models</button>
+                    <button class="filter-pill" data-filter="urban">Urban &amp; Field</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="container sheet-body">
+            <!-- Architectural Plate List (Horizontal Elevation Card Layout) -->
+            <div class="plates-stack" id="works-grid">
+                <article class="plate-card" data-category="residential">
+                    <div class="plate-elevation">
+                        <span class="plate-no">PLATE 01 &bull; 1:50</span>
+                        <div class="arch-sketch">
+                            <div class="sk-roof"></div>
+                            <div class="sk-body"><span></span><span></span></div>
+                        </div>
+                        <span class="plate-medium">RHINO 3D + BASSWOOD</span>
+                    </div>
+                    <div class="plate-details">
+                        <div class="plate-meta-top">
+                            <span class="work-type">RESIDENTIAL COURTYARD TYPOLOGY</span>
+                            <span class="plate-year">2026</span>
+                        </div>
+                        <h2>The Terraced Courtyard House</h2>
+                        <p>A 210 m² multi-generational home organized around a sheltered south-facing garden court that draws low winter sun into every living room while maintaining acoustic privacy.</p>
+                        <div class="plate-bottom">
+                            <div class="work-tags">
+                                <span>Passive Solar</span><span>Red Brick &amp; Fir</span><span>Sectional Model</span>
+                            </div>
+                            <button class="btn btn-outline btn-sm open-work-btn" data-work="courtyard">Inspect Drawing Sheet &rarr;</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="plate-card" data-category="model">
+                    <div class="plate-elevation">
+                        <span class="plate-no">PLATE 02 &bull; 1:25</span>
+                        <div class="arch-sketch">
+                            <div class="sk-gable"></div>
+                            <div class="sk-truss"></div>
+                        </div>
+                        <span class="plate-medium">HAND-CUT BASSWOOD</span>
+                    </div>
+                    <div class="plate-details">
+                        <div class="plate-meta-top">
+                            <span class="work-type">STRUCTURAL TECTONIC MODEL</span>
+                            <span class="plate-year">2026</span>
+                        </div>
+                        <h2>Cantilevered Hillside Timber Cabin</h2>
+                        <p>Hand-fabricated 1:25 structural model testing how paired glulam beams anchor a 65 m² cabin onto a 24-degree wooded slope using minimal pier footings.</p>
+                        <div class="plate-bottom">
+                            <div class="work-tags">
+                                <span>Glulam Joinery</span><span>Slope Ecology</span><span>Hand Drafting</span>
+                            </div>
+                            <button class="btn btn-outline btn-sm open-work-btn" data-work="cabin">Inspect Drawing Sheet &rarr;</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="plate-card" data-category="urban">
+                    <div class="plate-elevation">
+                        <span class="plate-no">PLATE 03 &bull; 1:100</span>
+                        <div class="arch-sketch">
+                            <div class="sk-row"><span></span><span></span><span></span></div>
+                        </div>
+                        <span class="plate-medium">AUTOCAD + MASONRY</span>
+                    </div>
+                    <div class="plate-details">
+                        <div class="plate-meta-top">
+                            <span class="work-type">NARROW-LOT URBAN INFILL</span>
+                            <span class="plate-year">2025</span>
+                        </div>
+                        <h2>4.5m Infill Brick Rowhouse</h2>
+                        <p>Transforms a narrow vacant urban parcel into a three-story starter residence illuminated by a central open-riser timber stair and thermal-chimney skylight.</p>
+                        <div class="plate-bottom">
+                            <div class="work-tags">
+                                <span>Lightwell Section</span><span>Perforated Brick</span><span>Daylight Study</span>
+                            </div>
+                            <button class="btn btn-outline btn-sm open-work-btn" data-work="rowhouse">Inspect Drawing Sheet &rarr;</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="plate-card" data-category="model">
+                    <div class="plate-elevation">
+                        <span class="plate-no">PLATE 04 &bull; 1:20</span>
+                        <div class="arch-sketch">
+                            <div class="sk-oculus"></div>
+                        </div>
+                        <span class="plate-medium">CAST PLASTER + BIRCH</span>
+                    </div>
+                    <div class="plate-details">
+                        <div class="plate-meta-top">
+                            <span class="work-type">ATMOSPHERIC DAYLIGHTING</span>
+                            <span class="plate-year">2025</span>
+                        </div>
+                        <h2>Solstice Reading Pavilion</h2>
+                        <p>Cast-plaster and birch-plywood light chamber tested under outdoor solar angles to sculpt glare-free reading alcoves through deep ceiling baffles.</p>
+                        <div class="plate-bottom">
+                            <div class="work-tags">
+                                <span>Heliodon Shadow Test</span><span>Plaster Casting</span><span>Aperture Study</span>
+                            </div>
+                            <button class="btn btn-outline btn-sm open-work-btn" data-work="pavilion">Inspect Drawing Sheet &rarr;</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="plate-card" data-category="residential">
+                    <div class="plate-elevation">
+                        <span class="plate-no">PLATE 05 &bull; 1:50</span>
+                        <div class="arch-sketch">
+                            <div class="sk-mod"><span></span><span></span></div>
+                        </div>
+                        <span class="plate-medium">MODULAR TIMBER GRID</span>
+                    </div>
+                    <div class="plate-details">
+                        <div class="plate-meta-top">
+                            <span class="work-type">INCREMENTAL HOUSING SYSTEM</span>
+                            <span class="plate-year">2025</span>
+                        </div>
+                        <h2>Grow-Over-Time Modular Starter Home</h2>
+                        <p>Engineered on a repeatable 3.6m structural timber bay so young households can bolt on additional bedroom wings without demolishing core wet walls.</p>
+                        <div class="plate-bottom">
+                            <div class="work-tags">
+                                <span>3.6m Structural Grid</span><span>Prefabrication</span><span>Low-Waste</span>
+                            </div>
+                            <button class="btn btn-outline btn-sm open-work-btn" data-work="modular">Inspect Drawing Sheet &rarr;</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="plate-card" data-category="urban">
+                    <div class="plate-elevation">
+                        <span class="plate-no">PLATE 06 &bull; FIELD</span>
+                        <div class="arch-sketch">
+                            <div class="sk-arch"></div>
+                        </div>
+                        <span class="plate-medium">INK &amp; MINERAL WASH</span>
+                    </div>
+                    <div class="plate-details">
+                        <div class="plate-meta-top">
+                            <span class="work-type">MEASURED FIELD SKETCHBOOK</span>
+                            <span class="plate-year">2024–26</span>
+                        </div>
+                        <h2>Vernacular Porch &amp; Threshold Atlas</h2>
+                        <p>Twenty-four measured ink-and-watercolor drawings documenting how residential porches, eaves, and stoops mediate climate and neighborhood life.</p>
+                        <div class="plate-bottom">
+                            <div class="work-tags">
+                                <span>Measured Elevations</span><span>Freehand Ink</span><span>Domestic Urbanism</span>
+                            </div>
+                            <button class="btn btn-outline btn-sm open-work-btn" data-work="atlas">Inspect Drawing Sheet &rarr;</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Architectural Sheet Modal -->
+    <div id="work-modal" class="modal hidden" role="dialog" aria-modal="true">
+        <div class="modal-card">
+            <button class="modal-close" id="close-work-modal" aria-label="Close modal">&times;</button>
+            <span id="w-modal-type" class="work-type"></span>
+            <h2 id="w-modal-title"></h2>
+            <p id="w-modal-desc" class="modal-desc"></p>
+            <div class="modal-details">
+                <h4>ARCHITECTURAL PROGRAM &amp; TECHNICAL NOTES</h4>
+                <ul id="w-modal-notes"></ul>
+            </div>
+        </div>
+    </div>
+
+    <footer class="titleblock-footer">
+        <div class="container titleblock-grid">
+            <div class="tb-cell tb-main">
+                <span class="tb-kicker">ARCHITECTURAL ADMISSIONS PORTFOLIO // 2026 EDITION</span>
+                <p class="tb-title">MAYA LIN &mdash; RESIDENTIAL ARCHITECTURE &amp; SPATIAL STUDIES</p>
+            </div>
+            <div class="tb-cell">
+                <span class="tb-kicker">SCALE</span>
+                <p class="tb-val">VARIES (1:20 – 1:100)</p>
+            </div>
+            <div class="tb-cell">
+                <span class="tb-kicker">DRAWING NO.</span>
+                <p class="tb-val">A-101</p>
+            </div>
+            <div class="tb-cell tb-links">
+                <span class="tb-kicker">SHEET INDEX</span>
+                <div class="tb-nav-links">
+                    <a href="index.html">A-000</a>
+                    <a href="projects.html">A-101</a>
+                    <a href="achievements.html">A-201</a>
+                    <a href="about.html">A-301</a>
+                    <a href="contact.html">A-401</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
