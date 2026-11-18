@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Works &amp; Models | Maya Lin — Architecture Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="index.html" class="brand">
+                <span class="brand-mark">M.L.</span>
+                <span class="brand-text">Maya Lin <span class="brand-sub">// B.Arch '31</span></span>
+            </a>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link ">01. Studio Home</a>
+                <a href="projects.html" class="nav-link active">02. Works &amp; Models</a>
+                <a href="achievements.html" class="nav-link ">03. Honors</a>
+                <a href="about.html" class="nav-link ">04. Architect Bio</a>
+                <a href="contact.html" class="nav-link ">05. Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="subpage-main">
+        <section class="subpage-header">
+            <div class="container">
+                <span class="section-kicker">// 02. SELECTED STUDIO WORKS</span>
+                <h1>Residential Designs &amp; Physical Models</h1>
+                <p>Architectural studies exploring domestic warmth, natural ventilation, structural honesty, and physical model-making.</p>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="filter-row">
+                <button class="filter-pill active" data-filter="all">All Works (6)</button>
+                <button class="filter-pill" data-filter="residential">Residential Homes</button>
+                <button class="filter-pill" data-filter="model">Physical Scale Models</button>
+                <button class="filter-pill" data-filter="urban">Community &amp; Adaptive Reuse</button>
+            </div>
+
+            <div class="works-grid" id="works-grid">
+                <article class="work-card" data-category="residential">
+                    <div class="work-preview preview-courtyard">
+                        <span class="scale-badge">SCALE 1:50 &bull; 2026</span>
+                        <div class="arch-sketch">
+                            <div class="sk-roof"></div>
+                            <div class="sk-body"><span></span><span></span></div>
+                        </div>
+                    </div>
+                    <div class="work-body">
+                        <span class="work-type">Residential Architecture</span>
+                        <h3>The Terraced Courtyard House</h3>
+                        <p>A multi-generational 3-bedroom home organized around a sheltered south-facing garden court that brings winter sun deep into every living space.</p>
+                        <div class="work-tags">
+                            <span>Rhino 3D</span><span>Passive Solar</span><span>Basswood Model</span>
+                        </div>
+                        <button class="btn btn-outline btn-sm open-work-btn" data-work="courtyard">View Sheet &amp; Notes &rarr;</button>
+                    </div>
+                </article>
+
+                <article class="work-card" data-category="model">
+                    <div class="work-preview preview-timber">
+                        <span class="scale-badge">SCALE 1:25 &bull; 2026</span>
+                        <div class="arch-sketch">
+                            <div class="sk-gable"></div>
+                            <div class="sk-truss"></div>
+                        </div>
+                    </div>
+                    <div class="work-body">
+                        <span class="work-type">Tectonic Model Study</span>
+                        <h3>Cantilevered Hillside Timber Cabin</h3>
+                        <p>Hand-crafted basswood and museum-board structural model testing how a lightweight glulam frame rests lightly on a steep slope with minimal excavation.</p>
+                        <div class="work-tags">
+                            <span>Basswood</span><span>Joinery Study</span><span>Hand Drafting</span>
+                        </div>
+                        <button class="btn btn-outline btn-sm open-work-btn" data-work="cabin">View Sheet &amp; Notes &rarr;</button>
+                    </div>
+                </article>
+
+                <article class="work-card" data-category="urban">
+                    <div class="work-preview preview-brick">
+                        <span class="scale-badge">SCALE 1:100 &bull; 2025</span>
+                        <div class="arch-sketch">
+                            <div class="sk-row"><span></span><span></span><span></span></div>
+                        </div>
+                    </div>
+                    <div class="work-body">
+                        <span class="work-type">Adaptive Reuse &amp; Housing</span>
+                        <h3>Narrow-Lot Infill Brick Rowhouse</h3>
+                        <p>Designed a compact 4.5-meter-wide starter home featuring a central lightwell stair and reclaimed red brick facade for dense urban neighborhoods.</p>
+                        <div class="work-tags">
+                            <span>AutoCAD</span><span>Daylight Analysis</span><span>Masonry</span>
+                        </div>
+                        <button class="btn btn-outline btn-sm open-work-btn" data-work="rowhouse">View Sheet &amp; Notes &rarr;</button>
+                    </div>
+                </article>
+
+                <article class="work-card" data-category="model">
+                    <div class="work-preview preview-light">
+                        <span class="scale-badge">SCALE 1:20 &bull; 2025</span>
+                        <div class="arch-sketch">
+                            <div class="sk-oculus"></div>
+                        </div>
+                    </div>
+                    <div class="work-body">
+                        <span class="work-type">Daylighting &amp; Spatial Study</span>
+                        <h3>Solstice Reading Pavilion</h3>
+                        <p>Plaster and birch-plywood light box photographed across simulated solar angles to sculpt calm, glare-free reading alcoves without artificial lighting.</p>
+                        <div class="work-tags">
+                            <span>Cast Plaster</span><span>Heliodon Test</span><span>Photography</span>
+                        </div>
+                        <button class="btn btn-outline btn-sm open-work-btn" data-work="pavilion">View Sheet &amp; Notes &rarr;</button>
+                    </div>
+                </article>
+
+                <article class="work-card" data-category="residential">
+                    <div class="work-preview preview-modular">
+                        <span class="scale-badge">SCALE 1:50 &bull; 2025</span>
+                        <div class="arch-sketch">
+                            <div class="sk-mod"><span></span><span></span></div>
+                        </div>
+                    </div>
+                    <div class="work-body">
+                        <span class="work-type">Sustainable Housing</span>
+                        <h3>Grow-Over-Time Modular Starter Home</h3>
+                        <p>An affordable prefabricated timber core house engineered so young families can bolt on an extra bedroom wing or studio loft as their household grows.</p>
+                        <div class="work-tags">
+                            <span>Prefabrication</span><span>SketchUp</span><span>Lifecycle Design</span>
+                        </div>
+                        <button class="btn btn-outline btn-sm open-work-btn" data-work="modular">View Sheet &amp; Notes &rarr;</button>
+                    </div>
+                </article>
+
+                <article class="work-card" data-category="urban">
+                    <div class="work-preview preview-sketch">
+                        <span class="scale-badge">FIELD SKETCHBOOK &bull; 2024–26</span>
+                        <div class="arch-sketch">
+                            <div class="sk-arch"></div>
+                        </div>
+                    </div>
+                    <div class="work-body">
+                        <span class="work-type">Observational Drawing</span>
+                        <h3>Vernacular Porch &amp; Threshold Atlas</h3>
+                        <p>A series of 24 ink-and-watercolor measured drawings analyzing how front porches, eaves, and thresholds connect private homes to neighborhood streets.</p>
+                        <div class="work-tags">
+                            <span>Ink &amp; Wash</span><span>Measured Plans</span><span>Urbanism</span>
+                        </div>
+                        <button class="btn btn-outline btn-sm open-work-btn" data-work="atlas">View Sheet &amp; Notes &rarr;</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Project Sheet Modal -->
+    <div id="work-modal" class="modal hidden" role="dialog" aria-modal="true">
+        <div class="modal-card">
+            <button class="modal-close" id="close-work-modal" aria-label="Close modal">&times;</button>
+            <span id="w-modal-type" class="work-type"></span>
+            <h2 id="w-modal-title"></h2>
+            <p id="w-modal-desc" class="modal-desc"></p>
+            <div class="modal-details">
+                <h4>ARCHITECTURAL PROGRAM &amp; DESIGN NOTES</h4>
+                <ul id="w-modal-notes"></ul>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div>
+                <p class="footer-title">MAYA LIN &mdash; ASPIRING ARCHITECTURAL DESIGNER</p>
+                <p class="footer-sub">Residential Spatial Studies, Timber Tectonics &amp; Sustainable Homes &bull; Portfolio Edition 2026</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="projects.html">Works</a>
+                <a href="achievements.html">Honors</a>
+                <a href="about.html">Bio</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

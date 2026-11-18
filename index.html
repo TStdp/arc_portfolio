@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maya Lin | Architecture Admissions Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="index.html" class="brand">
+                <span class="brand-mark">M.L.</span>
+                <span class="brand-text">Maya Lin <span class="brand-sub">// B.Arch '31</span></span>
+            </a>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link active">01. Studio Home</a>
+                <a href="projects.html" class="nav-link ">02. Works &amp; Models</a>
+                <a href="achievements.html" class="nav-link ">03. Honors</a>
+                <a href="about.html" class="nav-link ">04. Architect Bio</a>
+                <a href="contact.html" class="nav-link ">05. Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero + Interactive 3D Exploded House Model -->
+        <section class="hero-section">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <div class="eyebrow">
+                        <span class="eyebrow-dot"></span>
+                        <span>B.ARCH UNDERGRADUATE APPLICANT &bull; RESIDENTIAL &amp; SPATIAL DESIGN</span>
+                    </div>
+                    <h1>Shaping Quiet <span class="accent-italic">Homes</span> Where Light &amp; Structure Meet.</h1>
+                    <p class="hero-lead">
+                        I'm <strong>Maya Lin</strong>—an aspiring architect focused on human-scale residential homes, passive daylighting, and tactile timber-and-brick craft. Move your cursor across the <strong>3D Exploded House Study</strong> to inspect how roof, living volume, structural frame, and plinth come together.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="projects.html" class="btn btn-crimson">View Architectural Works &rarr;</a>
+                        <a href="about.html" class="btn btn-outline">Read Design Philosophy</a>
+                    </div>
+                    <div class="hero-metrics">
+                        <div class="h-metric">
+                            <span class="h-val">08</span>
+                            <span class="h-lbl">Scale Models &amp; Home Studies</span>
+                        </div>
+                        <div class="h-metric">
+                            <span class="h-val">1:50</span>
+                            <span class="h-lbl">Primary Basswood Scale</span>
+                        </div>
+                        <div class="h-metric">
+                            <span class="h-val">03</span>
+                            <span class="h-lbl">Design Competition Honors</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive 3D Exploded House Stage -->
+                <div class="model-stage-card" id="model-stage-card">
+                    <div class="stage-topbar">
+                        <span class="mono-tag">FIG 01. EXPLODED AXONOMETRIC HOUSE STUDY</span>
+                        <span class="mono-tag live-coords" id="gyro-coords">ROT: -18° / 28°</span>
+                    </div>
+
+                    <div class="viewport-3d" id="viewport-3d">
+                        <div class="house-assembly" id="house-assembly">
+                            <!-- Layer 1: Pitched Roof & Skylight -->
+                            <div class="house-part part-roof" data-layer="1">
+                                <div class="roof-plane left-slope">
+                                    <span class="part-tag">01 // STANDING-SEAM ROOF &amp; CLERESTORY</span>
+                                </div>
+                                <div class="roof-plane right-slope"></div>
+                                <div class="roof-chimney"></div>
+                            </div>
+
+                            <!-- Layer 2: Upper Loft & Timber Louvers -->
+                            <div class="house-part part-upper" data-layer="2">
+                                <div class="box-face front">
+                                    <span class="part-tag">02 // UPPER STUDIO &amp; CEDAR LOUVERS</span>
+                                    <div class="window-row">
+                                        <span></span><span></span><span></span><span></span>
+                                    </div>
+                                </div>
+                                <div class="box-face side"></div>
+                                <div class="box-face top"></div>
+                            </div>
+
+                            <!-- Layer 3: Structural Post-and-Beam Frame -->
+                            <div class="house-part part-frame" data-layer="3">
+                                <span class="part-tag">03 // GLULAM TIMBER FRAME &amp; COURTYARD</span>
+                                <div class="beam-grid">
+                                    <div class="pillar p1"></div>
+                                    <div class="pillar p2"></div>
+                                    <div class="pillar p3"></div>
+                                    <div class="pillar p4"></div>
+                                    <div class="cross-beam b1"></div>
+                                    <div class="cross-beam b2"></div>
+                                </div>
+                            </div>
+
+                            <!-- Layer 4: Ground Floor Living Volume -->
+                            <div class="house-part part-ground" data-layer="4">
+                                <div class="ground-slab">
+                                    <span class="part-tag">04 // OPEN LIVING PAVILION &amp; HEARTH</span>
+                                    <div class="interior-walls">
+                                        <div class="wall-seg w1"></div>
+                                        <div class="wall-seg w2"></div>
+                                        <div class="hearth-core"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Layer 5: Concrete Foundation & Garden Plinth -->
+                            <div class="house-part part-plinth" data-layer="5">
+                                <div class="plinth-base">
+                                    <span class="part-tag">05 // BOARD-FORMED PLINTH &amp; STEPPED TERRACE</span>
+                                    <div class="terrace-steps">
+                                        <span></span><span></span><span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="stage-controls">
+                        <span class="stage-hint">Move mouse over model to orbit &amp; separate house layers</span>
+                        <div class="stage-btns">
+                            <button type="button" class="mini-btn active" id="btn-explode">Exploded View</button>
+                            <button type="button" class="mini-btn" id="btn-assemble">Assemble House</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Studio Pillars / Directory -->
+        <section class="section-block">
+            <div class="container">
+                <div class="section-head">
+                    <span class="section-kicker">// PORTFOLIO INDEX</span>
+                    <h2>Curated Architecture Dossier</h2>
+                    <p>Prepared for university B.Arch admissions committees—documenting spatial thinking, physical model craft, and residential design studies.</p>
+                </div>
+
+                <div class="index-grid">
+                    <a href="projects.html" class="index-card">
+                        <span class="card-index">02</span>
+                        <h3>Works &amp; Scale Models</h3>
+                        <p>Courtyard Family House, Hillside Timber Cabin, Adaptive Brick Rowhouse, and Light-Study Pavilions.</p>
+                        <span class="card-cta">Inspect Drawings &amp; Models &rarr;</span>
+                    </a>
+
+                    <a href="achievements.html" class="index-card">
+                        <span class="card-index">03</span>
+                        <h3>Honors &amp; Exhibitions</h3>
+                        <p>National High School Architecture Prize, Regional Sustainable Home Award, and Youth Design Exhibition.</p>
+                        <span class="card-cta">View Recognition &rarr;</span>
+                    </a>
+
+                    <a href="about.html" class="index-card">
+                        <span class="card-index">04</span>
+                        <h3>Architect Bio &amp; Approach</h3>
+                        <p>Why I want to build homes, my hand-drafting and CAD/Rhino workflow, and my goals for architecture school.</p>
+                        <span class="card-cta">Read Statement &rarr;</span>
+                    </a>
+
+                    <a href="contact.html" class="index-card">
+                        <span class="card-index">05</span>
+                        <h3>Contact &amp; Portfolio Review</h3>
+                        <p>Connect with me regarding university interviews, studio critiques, summer workshops, or design inquiries.</p>
+                        <span class="card-cta">Get in Touch &rarr;</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div>
+                <p class="footer-title">MAYA LIN &mdash; ASPIRING ARCHITECTURAL DESIGNER</p>
+                <p class="footer-sub">Residential Spatial Studies, Timber Tectonics &amp; Sustainable Homes &bull; Portfolio Edition 2026</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="projects.html">Works</a>
+                <a href="achievements.html">Honors</a>
+                <a href="about.html">Bio</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
